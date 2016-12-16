@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/show.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <script src="js/zepto.min.js"></script>
+    <script src="js/size.js"></script>
+</head>
+	<body>
+		<header>
+			<a href="list.html" class="iconfont">&#xe610;</a>
+		</header>
+		<div class="shadow"></div>
+		<div class="bg">
+			<span>每个人的青春里都有一条弯路</span>
+			<span>收听 10578</span>
+		</div>
+		<div class="btn">
+			<div class="up iconfont">&#xe617;</div>
+			<div class="center iconfont">&#xe61d;</div>
+			<div class="down iconfont">&#xe627;</div>
+			<div class="progress-time">-12.22</div>
+			<div class="progress">
+				<div class="progress-con"></div>
+				<div class="progress-circle"></div>
+			</div>
+		</div>
+		<div class="author">
+			<div class="author-img"></div>
+			<div class="author-center">
+				<span>丸子</span>
+				<span>圆圆的丸子 sina weibo 搜索：HeyyyDiear</span>
+			</div>
+			<div class="sixin iconfont">&#xe60f; 私信</div>
+		</div>
+		<footer>
+			<div>
+				<a href="gift.html"><span class="iconfont">&#xe61f;</span><br />送礼物</a>
+			</div>
+			<div>
+				<a href="comment.html"><span class="iconfont">&#xe621;</span><br />评论 9</a>
+			</div>
+			<div>
+				<a href="javascript:;"><span class="iconfont">&#xe623;</span><br />收藏 113</a>
+			</div>
+			<div>
+				<a href="share.html"><span class="iconfont">&#xe679;</span><br />分享</a>
+			</div>
+			<div>
+				<a href="javascript:;"><span class="iconfont">&#xe637;</span><br />更多</a>
+				<ul class="foot-more">
+					<li><span class="iconfont">&#xe6b7;</span>下载节目</li>
+					<li><span class="iconfont">&#xe613;</span>阅读原文</li>
+					<div class="foot-san"></div>
+				</ul>
+			</div>
+			
+		</footer>
+	</body>
+	<script>
+		$("footer>div").click(function(){
+			$(this).find("ul").toggle();
+		})
+		$("footer>div:nth-child(3)").click(function(){
+			$(this).find("span").html("&#xe64d;");
+		})
+	</script>
+</html>
