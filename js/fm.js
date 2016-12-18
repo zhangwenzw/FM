@@ -1,5 +1,4 @@
 $(function(){
-	resize(1334,"y");
 	var myScroll = new IScroll('#wrapper', { mouseWheel: true });
 		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 	var mySwiper = new Swiper('.banner', {

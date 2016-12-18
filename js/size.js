@@ -10,6 +10,6 @@ function resize(origin,type){
     var html=document.getElementsByTagName("html")[0];
     html.style.fontSize=scale+"px";
 }
-window.onload=function(){
+document.addEventListener("DOMContentLoaded",function(){
 	resize(750);
-}
+},false);

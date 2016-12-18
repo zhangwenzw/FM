@@ -140,20 +140,20 @@ footer .foot-more .foot-san{
 	font-size:0.4rem;text-align: center;line-height: 1.2rem;
 }
 
-.list{
+.share>.list{
 	width:100%;height:3.5rem;font-size:0.3rem;text-align: center;line-height: 0.6rem;
 	 display: flex;flex-direction: row;flex-wrap: wrap;
 }
-.list li{
+.share>.list li{
 	width:33.33%;height:50%;column-count: 3;
 }
-.list li span{
+.share>.list li span{
 	display:block;width:0.9rem;height:0.9rem;background:blue;border-radius:50%;margin: 0 auto;color:#fff;text-align: center;line-height: 1rem;font-size: 0.5rem;
 }
-.list li a{
+.share>.list li{
 	color:#333;font-size:0.25rem;
 }
-.cancle{
+.share>.cancle{
 	display:block;width:5rem;height:0.7rem;border-radius: 0.1rem;border:0.03rem dashed #ccc;margin:0 auto;font-size:0.3rem;text-align: center;line-height: 0.7rem;cursor: pointer;color: #333;
 }
 
