@@ -8,6 +8,5 @@ $(function(){
 	$("footer>a").click(function(){
 		var index =$("footer>div").index(this);
 		$("footer>a").removeClass("active").eq(index).addClass("active");
-		
 	})
 })

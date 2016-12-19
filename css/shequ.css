@@ -1,0 +1,155 @@
+body,a,ul,ol,li,input,p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img{
+    border: 0;
+}
+a{
+    text-decoration: none;
+}
+/*消除默认样式*/
+a,button{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+button{
+	-webkit-appearance: none;
+}
+body{
+	/*禁止用户设置字体大小*/
+	-webkit-text-size-adjust: 100%;
+	/*禁止文字选中*/
+	-webkit-user-select: none;
+}
+html,body{
+	width:7.5rem;height:13.34rem;overflow: hidden;
+}
+/*foot*/
+footer{
+	width:7.5rem;height:1.3rem;display:flex;font-size: 0.4rem;justify-content: space-around;align-items:center;position: absolute;bottom: 0;left: 0;background:#373B3D;color:#fff;font-size:0.25rem;position: absolute;bottom: 0;left: 0;
+}
+footer a{
+	display:block;width:1.5rem;height:100%;line-height: 0.45rem;text-align: center;cursor: pointer;color:#fff;box-sizing: border-box;padding-top:0.3rem;
+}
+footer a .iconfont{
+	font-size:0.5rem;
+}
+footer .active{
+	background:#282C2E;
+}
+
+.shequ-title{
+	width:7.5rem;height:1.3rem;bottom: 0;left: 0;color:#333;position: absolute;top: 0;left: 0;line-height: 1.4rem;background:#fff;border-bottom: 0.03rem solid #ccc;box-sizing: border-box;padding:0 0.3rem;text-align:center;
+}
+.shequ-title>div{
+	width:3.6rem;height:0.8rem;position: absolute;top:0;bottom:0;left:0;right:0;margin:auto;font-size:0.3rem;border:0.03rem solid #EEAE7E;border-radius: 0.15rem;
+}
+.shequ-title>div>div{
+	width:1.8rem;height:0.8rem;text-align: center;line-height: 0.8rem;float: left;color:#EEAE7E;
+}
+.shequ-title>div .active{
+	color:#fff;background:#EEAE7E;
+}
+.shequ-title>a{
+	color:#EEAE7E;float: left;font-size:0.5rem;
+}
+.shequ-title>span{
+	font-size: 0.4rem;
+}
+.shequ-title>span:last-of-type{
+	float: right;color:#EEAE7E;font-size:0.5rem;
+}
+#wrapper{
+	background:#eee;width:7.5rem;height:10.74rem;position: absolute;top:1.3rem;left:0;overflow: hidden;
+}
+.shequ-list li a{
+	display: block;box-sizing: border-box;padding:0.2rem;font-size:0.3rem;background: #fff;margin:0.3rem 0;
+}
+.user-img{
+	width:1rem;margin:0 0.2rem 0.2rem 0;
+}
+.shequ-list li>a>div:first-child{
+	overflow: hidden;
+}
+.shequ-list li>a>div:first-child>div{
+	float: left;
+}
+.shequ-list li>a>div:first-child>div:nth-child(3){
+	float: right;color:#999;
+}
+.user span:first-child{
+	font-size:0.3rem;color:#333;
+}
+.user span:last-child{
+	font-size:0.25rem;color:#999;line-height:0.6rem;
+}
+.con-title{
+	font-size:0.35rem;color:#333;line-height: 0.5rem;
+}
+.con-con{
+	font-size:0.29rem;color:#666;line-height: 0.4rem;
+}
+.con-con img{
+	margin-top: 0.2rem;
+}
+
+/*详情*/
+.part-list{
+	background:#fff;
+}
+.comment-list{
+	width:7.5rem;margin:0 auto;box-sizing: border-box;padding:0 0.2rem;
+}
+.comment-list li a{
+	display: block;width:7.1rem;padding:0.3rem 0;border-bottom:0.03rem solid #eee;overflow: hidden;
+}
+.comment-list li a img{
+	float:left;width: 0.9rem;margin-right:0.3rem;
+}
+.comment-list li a .right{
+	width:5.8rem;font-size: 0.3rem;float: left;color:#999;
+}
+.comment-list li a .right div:not(:last-child){
+	margin-bottom:0.2rem;
+}
+.comment-list li a .right div:nth-child(2){
+	color:#333;margin-bottom:0.3rem
+}
+.comment-list li a .right div span:nth-child(2){
+	float: right;
+}
+.comment-list li a .right div span:nth-child(2) i{
+margin-right: 0.2rem;
+}
+.comment-list li:last-child a{
+border:0}
+
+/*发表*/
+.publish-title{
+	background:#fff;width:7.5rem;height:1.3rem;text-align: center;box-sizing:border-box;padding:0 0.2rem;font-size:0.4rem;display: flex;justify-content: space-between;align-items: center;border-bottom:0.03rem solid #ccc;
+}
+.publish-title a{
+	color:#EEAE7E;font-size:0.5rem;
+}
+.publish{
+	background: #fff;
+}
+.publish-con li{
+	padding:0.3rem;box-sizing: border-box;
+}
+.publish-con li:first-child{
+	border-bottom: 0.03rem solid #ccc;font-size:0.3rem;
+}
+.publish-con li:first-child input{
+	color:#999;border:0;font-weight: bold;
+}
+.publish-con li:nth-child(2){
+	font-size:0.3rem;
+}
+.publish-con li:nth-child(2) input{
+	font-size:0.3rem;color:#ccc;border:0;
+}
+.publish .iconfont{
+	margin:2rem 0 0.5rem 0.3rem;
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper-3.4.0.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/guide.css">
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper-3.4.0.min.js"></script>
+    <script src="js/size.js"></script>
+</head>
+<body>
+<div class="swiper-container">
+    <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+            <div class="gpage gpage1">
+            	<p>人生就像电台</p>
+                <h2>切换频道</h2>
+                <p>才能听见更大的世界</p>
+            </div>
+        </li>
+        <li class="swiper-slide">
+            <div class="gpage gpage2">
+                <h2>创建独立电台</h2>
+                <p>你就是心理学人的1%</p>
+            </div>
+        </li>
+        <li class="swiper-slide">
+            <div class="gpage gpage3">
+                <h2>关注电台</h2>
+                <p>才不会错过主播最新作品</p>
+            </div>
+        </li>
+    </ul>
+    <div class="swiper-pagination"></div>
+</div>
+</body>
+<script>
+	$(function(){
+	    var mySwiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	    })
+	})
+</script>
+</html>

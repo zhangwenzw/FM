@@ -29,22 +29,25 @@ html,body{
 	font-size: 0.4rem;
 }
 #wrapper{
-	width:100%;height:12.04rem;overflow: hidden;position: absolute;top:0;left:0;
+	width:100%;height:12rem;overflow: hidden;position: absolute;top:0;left:0;
 }
 .mine-bg{
 	width:7.5rem;height:3.5rem;background: url(../img/my_bg.png) no-repeat center;background-size: cover;
 }
 .mine-title{
-	width:7.5rem;height:2rem;margin-top:-0.5rem;font-size:0.3rem;line-height: 1.6rem;
+	width:7.5rem;height:2rem;margin-top:-0.5rem;font-size:0.3rem;line-height: 1.6rem;position: relative;
 }
 .mine-img{
 	width:1.5rem;height:1.5rem;border-radius: 50%;border:0.08rem solid #fff;background:url(../img/1.jpg) center;background-size:cover;float: left;margin:0 0.2rem 0 0.3rem;
 }
 .mine-con{
-	width:6.9rem;margin:0 auto;border:0.03rem solid #eee;border-radius: 0.3rem;
+	width:6.9rem;margin:0 auto;border:0.03rem solid #eee;border-radius: 0.3rem;margin-bottom: 0.3rem;overflow: hidden;font-size:0.3rem;
 }
 .mine-con li a{
-	display: block;border-bottom: 0.03rem solid #eee;font-size:0.3rem;color:#333;box-sizing: border-box;padding:0.3rem 0 0.3rem 0.2rem;
+	display: block;border-bottom: 0.03rem solid #eee;font-size:0.3rem;color:#333;box-sizing: border-box;padding:0.3rem 0.2rem 0.3rem 0.2rem;
+}
+.mine-con li:last-child a{
+	border: 0;
 }
 .mine-con li a .iconfont{
 	font-size:0.4rem;margin-right:0.2rem;
@@ -61,6 +64,9 @@ html,body{
 .mine-con li:nth-child(4) .iconfont{
 	color:#82D3AD;
 }
+.mine-con li a span:nth-of-type(2){
+	float: right;color:#E9847E;
+}
 /*foot*/
 footer{
 	width:7.5rem;height:1.3rem;display:flex;font-size: 0.4rem;justify-content: space-around;align-items:center;position: absolute;bottom: 0;left: 0;background:#373B3D;color:#fff;font-size:0.25rem;position: absolute;bottom: 0;left: 0;
@@ -73,4 +79,68 @@ footer a .iconfont{
 }
 footer .active{
 	background:#282C2E;
+}
+
+
+/*设置*/
+.shadow{
+	width:7.5rem;height:0.01rem;box-shadow: 0 0.1rem 0.5rem rgba(0,0,0,.8);position: absolute;top:0;left:0;z-index: 9;
+}
+.set-title{
+	width:7.5rem;height:1.3rem;bottom: 0;left: 0;color:#333;font-size:0.4rem;position: absolute;top: 0;left: 0;text-align: center;line-height: 1.4rem;border-bottom: 0.03rem solid #eee;
+}
+.set-con .mine-img{
+	width:1.3rem;height:1.3rem;margin:0.3rem;border:0;
+}
+.set-con li:nth-child(1){
+	line-height: 1.9rem;
+}
+.set-con li:nth-child(1) span:nth-of-type(2){
+	float: right;margin-right: 0.2rem;color:#999;
+}
+.set-con li:last-child a{
+	text-align: center;line-height: 0.4rem;
+}
+.mine-con:nth-child(2) li a span:nth-of-type(2),.mine-con:nth-child(4) li a span:nth-of-type(2){
+	float: right;color:#999;
+}
+.mine-con:nth-child(3) li a span:nth-of-type(2){
+	color:#5295E3;
+}
+.mine-con:nth-child(1) li a{
+	float: right;line-height: 1.4rem;color:#999;
+}
+/*修改资料*/
+#update{
+	background:#fff;border-bottom:0.03rem solid #ccc;
+}
+#update a{
+	float: left;color:#EEAE7F;font-size: 0.7rem;
+}
+#update a:nth-of-type(2){
+	float:right;font-size:0.4rem;margin-right: 0.2rem;
+}
+.update-con{
+	width:7.5rem;margin-top:1.33rem;overflow: hidden;
+}
+.update-con .mine-img{
+	margin:0.9rem 0 0.9rem 2.8rem;
+}
+.update-c-con{
+	width:7.5rem;height:4rem;background:#fff;float: left;box-sizing: border-box;padding:0.2rem;
+}
+.update-c-con li{
+	font-size:0.3rem;line-height: 0.5rem;padding: 0.2rem 0;
+}
+.update-c-con li:nth-child(1){
+	border-bottom:0.03rem solid #ccc;
+}
+.update-c-con li span{
+	margin-right:0.3rem;color:#999;
+}
+.update-c-con li input{
+	border:0;color: #333;
+}
+.update-c-con li:nth-child(2) input{
+	color:#666;
 }
