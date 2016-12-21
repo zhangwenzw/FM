@@ -102,10 +102,10 @@ footer .active{
 	text-align: center;line-height: 0.4rem;
 }
 .mine-con:nth-child(2) li a span:nth-of-type(2),.mine-con:nth-child(4) li a span:nth-of-type(2){
-	float: right;color:#999;
+	float: right;color:#999;font-size:0.6rem;
 }
 .mine-con:nth-child(3) li a span:nth-of-type(2){
-	color:#5295E3;
+	color:#5295E3;font-size:0.6rem;
 }
 .mine-con:nth-child(1) li a{
 	float: right;line-height: 1.4rem;color:#999;

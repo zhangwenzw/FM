@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/iconfont.css" />
     <script src="js/zepto.min.js"></script>
     <script src="js/size.js"></script>
+    <script src="js/touch.js"></script>
 </head>
 	<body>
 		<header>
@@ -18,11 +19,12 @@
 			<span>每个人的青春里都有一条弯路</span>
 			<span>收听 10578</span>
 		</div>
+		<audio src="audio/qingchun.mp3" autoplay="autoplay"></audio>
 		<div class="btn">
 			<div class="up iconfont">&#xe617;</div>
 			<div class="center iconfont">&#xe61d;</div>
 			<div class="down iconfont">&#xe627;</div>
-			<div class="progress-time">-12.22</div>
+			<div class="progress-time">-12.38</div>
 			<div class="progress">
 				<div class="progress-con"></div>
 				<div class="progress-circle"></div>
@@ -67,5 +69,52 @@
 		$("footer>div:nth-child(3)").click(function(){
 			$(this).find("span").html("&#xe64d;");
 		})
+		
+//		音乐
+		var audio=document.querySelector("audio");
+		var btnCircle=document.querySelector(".progress-circle");
+		function getCurrentTime(id){ 
+			console.log(parseInt(audio.currentTime) + '：秒');
+		}
+		function playOrPause(){
+			if(audio.paused){
+				audio.play();
+			}else{
+				audio.pause();
+			}
+		}
+		$(".center").click(function(){
+			playOrPause();
+		})
+		audio.addEventListener("timeupdate",function(){
+			var allTime=audio.duration;
+		    var currentTime=this.currentTime;
+		    var bili=currentTime/allTime;
+		    var lefts=($(".progress").width()-$(".progress-circle").width())*bili;
+		    var widths=($(".progress").width())*bili;
+		    var time=(currentTime-allTime)/60;
+		    btnCircle.style.left=lefts+"px";
+		    $(".progress-con").css({width:widths});
+		    $(".progress-time").html(time.toFixed(2));
+		});
+		audio.addEventListener("loadedmetadata",function(){
+		    this.play();
+		});
+		
+		
+//		拖拽按钮
+//		var marginL;
+//      touch.on("body","dragstart",".progress-circle",function(e){
+//          marginL = parseInt($(".progress-circle").css("left"))?parseInt($(".progress-circle").css("left")):0;
+//      });
+//      touch.on("body","drag",".progress-circle",function(e){
+//          $(".progress-circle").css({left:e.x+marginL})
+//      });
+//      touch.on("body","dragend",".progress-circle",function(e){
+//      	$(".progress-circle").css({left:e.x+marginL})
+//      	var currentTime1=(parseInt($(".progress-circle").css("left"))/($(".progress").width()-$("progress-circle").width()))*audio.duration;
+//      	console.log(currentTime1)
+//      	audio.currentTime=currentTime1;
+//      })
 	</script>
 </html>

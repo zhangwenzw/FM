@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('../font/iconfont.eot?t=1481858948522'); /* IE9*/
-  src: url('../font/iconfont.eot?t=1481858948522#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../font/iconfont.woff?t=1481858948522') format('woff'), /* chrome, firefox */
-  url('../font/iconfont.ttf?t=1481858948522') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('../font/iconfont.svg?t=1481858948522#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('../font/iconfont.eot?t=1482219608412'); /* IE9*/
+  src: url('../font/iconfont.eot?t=1482219608412#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/iconfont.woff?t=1482219608412') format('woff'), /* chrome, firefox */
+  url('../font/iconfont.ttf?t=1482219608412') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg?t=1482219608412#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -15,6 +15,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-tupian:before { content: "\e62a"; }
+
 .icon-jia:before { content: "\e616"; }
 
 .icon-sousuo:before { content: "\e600"; }
@@ -22,6 +24,8 @@
 .icon-shuaxin:before { content: "\e601"; }
 
 .icon-shangyishou:before { content: "\e617"; }
+
+.icon-mima:before { content: "\e65e"; }
 
 .icon-weixin:before { content: "\e618"; }
 
@@ -60,6 +64,8 @@
 .icon-fenxiang:before { content: "\e679"; }
 
 .icon-xuelijiaoyu:before { content: "\e61c"; }
+
+.icon-zan:before { content: "\e630"; }
 
 .icon-collect:before { content: "\e64d"; }
 
@@ -125,7 +131,11 @@
 
 .icon-tounaofengbao:before { content: "\e607"; }
 
+.icon-kaiqi-copy:before { content: "\e62b"; }
+
 .icon-yezi:before { content: "\e622"; }
+
+.icon-iconfontzan-copy:before { content: "\e62c"; }
 
 .icon-lukou:before { content: "\e608"; }
 
@@ -163,7 +173,11 @@
 
 .icon-huati:before { content: "\e66d"; }
 
+.icon-zhuzhuangtu:before { content: "\e62d"; }
+
 .icon-tubulvhang:before { content: "\e749"; }
 
 .icon-huifu:before { content: "\e63c"; }
+
+.icon-kaiqi-copy1:before { content: "\e62e"; }
 
